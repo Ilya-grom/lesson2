@@ -5,5 +5,6 @@
 
 spisok = [1, 'gogi', [3,14], 'Pi', 'Hi', 24.02]
 print(spisok)
-spisok[0], spisok[-1], spisok[1], spisok[3] = spisok[-1], spisok[0], spisok[3], spisok[1]
+spisok[0], spisok[-1], spisok[1], spisok[2],spisok[-2], spisok[3] =\
+    spisok[-1], spisok[0], spisok[3], spisok[1], spisok[2], spisok[-2]
 print(spisok)
