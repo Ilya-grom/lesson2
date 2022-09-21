@@ -3,15 +3,7 @@
 # При нечётном количестве элементов последний сохранить на своём месте.
 # Для заполнения списка элементов нужно использовать функцию input().
 
-el_count = int(input("Введите количество элементов списка "))
-my_list = []
-i = 0
-el = 0
-while i < el_count:
-    my_list.append(input("Введите следующее значение списка "))
-    i += 1
-
-for elem in range(int(len(my_list)/2)):
-        my_list[el], my_list[el + 1] = my_list [el + 1], my_list[el]
-        el += 2
-print(my_list)
+spisok = [1, 'gogi', [3,14], 'Pi', 'Hi', 24.02]
+print(spisok)
+spisok[0], spisok[-1], spisok[1], spisok[3] = spisok[-1], spisok[0], spisok[3], spisok[1]
+print(spisok)
