@@ -3,7 +3,8 @@
 # Напишите решения через list и dict.
 
 what_time_of_year = {'зима': [12,1,2], 'весна': [3,4,5], 'лето': [6,7,8], 'осень': [9,10,11]}
-n = int(input('введите месяц числом:'))
+print(type(what_time_of_year))
+n = int(input('введите месяц числом, от 1 до 12:'))
 for el in what_time_of_year:
     if n in what_time_of_year[el]:
         print(el)
