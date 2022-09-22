@@ -8,19 +8,19 @@
 #Пользователь ввёл число 1. Результат: 7, 5, 3, 3, 2, 1.
 #Набор натуральных чисел можно задать сразу в коде, например, my_list = [7, 5, 3, 3, 2].
 
-my_list = [7, 5, 3, 3, 2]
-print(f"Рейтинг - {my_list}")
-digit = int(input("Введите любое число (1000 = выход) "))
-while digit != 111:
-    for el in range(len(my_list)):
-        if my_list[el] == digit:
-            my_list.insert(el + 1, digit)
+spisok = [7, 5, 3, 3, 2]
+print(f"Рейтинг - {spisok}")
+nomber = int(input("Введите любое число (1000 = выход) "))
+while nomber != 111:
+    for el in range(len(spisok)):
+        if spisok[el] == nomber:
+            spisok.insert(el + 1, nomber)
             break
-        elif my_list[0] < digit:
-            my_list.insert(0, digit)
-        elif my_list[-1] > digit:
-            my_list.append(digit)
-        elif my_list[el] > digit and my_list[el + 1] < digit:
-            my_list.insert(el + 1, digit)
-    print(f"текущий список - {my_list}")
-    digit = int(input("Введите число "))
+        elif spisok[0] < nomber:
+            spisok.insert(0, nomber)
+        elif spisok[-1] > nomber:
+            spisok.append(nomber)
+        elif spisok[el] > nomber and spisok[el + 1] < nomber:
+            spisok.insert(el + 1, nomber)
+    print(f"текущий список - {spisok}")
+    nomber = int(input("Введите число "))
